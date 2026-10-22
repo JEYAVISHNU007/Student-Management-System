@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CampusFlow | Student Management</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <main id="login" class="login-shell">
+    <section class="login-art">
+      <div class="brand"><span class="brand-mark">C</span><span>CampusFlow</span></div>
+      <div class="art-copy">
+        <span class="eyebrow">CAMPUS, IN ONE PLACE</span>
+        <h1>Make every student journey<br><em>count.</em></h1>
+        <p>A clearer way to manage student records, attendance, courses and academic progress.</p>
+      </div>
+      <div class="art-bottom"><span class="pulse"></span> Your campus workspace, simplified <span class="art-year">2026</span></div>
+    </section>
+    <section class="login-panel">
+      <div class="mobile-brand brand"><span class="brand-mark">C</span><span>CampusFlow</span></div>
+      <div class="login-heading"><span class="eyebrow">WELCOME BACK</span><h2>Sign in to your account</h2><p>Enter your details to continue to your dashboard.</p></div>
+      <form id="lf" class="login-form">
+        <label for="username">Username</label>
+        <div class="input-wrap"><span class="input-icon">◎</span><input id="username" name="username" autocomplete="username" placeholder="Enter your username" required></div>
+        <label for="password">Password</label>
+        <div class="input-wrap"><span class="input-icon">⌑</span><input id="password" name="password" type="password" autocomplete="current-password" placeholder="Enter your password" required></div>
+        <button class="btn primary sign-in" type="submit">Sign in <span>→</span></button>
+        <p id="login-note" class="login-note">Admin demo: <b>admin</b> / <b>admin123</b></p>
+      </form>
+      <div class="login-foot">Secure campus access <span>•</span> Student Management System</div>
+    </section>
+  </main>
+
+  <div id="app" hidden>
+    <aside class="sidebar">
+      <a class="brand side-brand" href="#"><span class="brand-mark">C</span><span>CampusFlow</span></a>
+      <div class="side-label">WORKSPACE</div><nav id="nav"></nav>
+      <div class="side-bottom"><div class="avatar">CF</div><div class="side-user"><b id="who">admin</b><span>Campus account</span></div><button id="out" class="logout" title="Sign out">↗</button></div>
+    </aside>
+    <section class="workspace">
+      <header class="topbar"><div><span class="eyebrow">CAMPUS MANAGEMENT</span><h2>Student portal</h2></div><div class="top-right"><span class="online-dot"></span><span>System online</span><div class="top-avatar">CF</div></div></header>
+      <main id="main" class="page-content"></main>
+      <footer class="footer">CampusFlow <span>•</span> Student Management System</footer>
+    </section>
+  </div>
+  <div id="modal" class="modal-backdrop" hidden></div><div id="toast" class="toast" role="status"></div>
+  <script src="assets/app.js"></script>
+</body>
+</html>
